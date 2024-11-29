@@ -14,3 +14,7 @@ And for executing the program :
 '''
 
 You can add it to an alias for a faster experience
+
+example : 
+
+for zsh = "alias s='f() { . ~/Code/shortcuts/shortcut.sh }f;'"  
