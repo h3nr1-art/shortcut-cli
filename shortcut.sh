@@ -7,6 +7,9 @@ else
 	if [ "$1" = "show" ]; then 
 		shortcut $1
 	else 
-		cd $HOME/.cache/shortcut/$1
+		cd $HOME/.cache/shortcut/$1 || shortcut help
+	fi
+	if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then 
+		shortcut help
 	fi
 fi
